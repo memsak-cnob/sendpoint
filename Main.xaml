@@ -1,0 +1,420 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1214,5579" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Security</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="78">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="613,5514" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Direct Dashboard" sap:VirtualizedContainerService.HintSize="551,3212" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="9c243a2b-da0c-4613-a39c-251553809620" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="517,2995" sap2010:WorkflowViewState.IdRef="Sequence_31">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'pane'" sap:VirtualizedContainerService.HintSize="455,157" sap2010:WorkflowViewState.IdRef="NClick_82" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9c243a2b-da0c-4613-a39c-251553809620" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="327, 8, 1463, 33" DesignTimeScaleFactor="1" FriendlyName="'pane'" FullSelectorArgument="&lt;ctrl name='Direct Dashboard - Microsoft Edge' role='pane' /&gt;&lt;ctrl idx='2' name='Tab bar' role='page tab list' /&gt;&lt;ctrl idx='3' role='pane' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Direct Dashboard - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Tab bar' role='page tab list' /&gt;&lt;ctrl automationid='' role='pane' /&gt;" Guid="1d28d8ce-1554-4d73-a0ac-c6461daedfb3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABbsAAAAlCAYAAABrqzQbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFySURBVHhe7di5bcRAAMDA7b9EFSAo1huuAUd2BQeehsA0wSFJkiRJkiRJkiRJkiRJkiRJ+nRTkiRJkiRJkqR4Y9u2CQAAAAAAZWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5ZjcAAAAAAHlmNwAAAAAAeWY3AAAAAAB5Y13XCQAAAAAAZWNZlgkAAAAAAGXjvu8JAAAAAPBGz/PwJcZ5nhMAAAAA4A2u6/rH+P4eY9/3CQAAAADwFsdx/Po7wA3vumf+AEN1LdKLDNQqAAAAAElFTkSuQmCC" InformativeScreenshot="bb75f60beffae84e5fe3d00b66391770.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Direct Dashboard - Personal - Microsoft​ Edge' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="153, 46, 1519, 26" ElementType="InputBox" FriendlyName="'https://dashboard.fisgl…'" FullSelectorArgument="&lt;ctrl name='Direct Dashboard - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Direct Dashboard - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Direct Dashboard - Personal - Microsoft​ Edge" sap:VirtualizedContainerService.HintSize="455,2683" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" ScopeGuid="ad9bdb26-ab5a-4551-a60a-825f712d59bf" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="421,2392" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  cphMain_ctlLogin...'" EmptyField="True" sap:VirtualizedContainerService.HintSize="359,135" sap2010:WorkflowViewState.IdRef="TypeInto_11" SendWindowMessages="False" SimulateType="True" Text="w342398">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b98deb14-636b-49e9-8e47-f2e48a2e4ff3" InformativeScreenshot="ea56ac82f1a93ac4d4d6717f4b069e84" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cphMain_ctlLogin_UserName' tableRow='1' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  cphMain_ctlLogin...'" EmptyField="True" sap:VirtualizedContainerService.HintSize="359,135" sap2010:WorkflowViewState.IdRef="TypeInto_12" SendWindowMessages="False" SimulateType="True" Text="Feb$2023">
+                      <ui:TypeInto.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7c051022-7e98-414b-b009-0f8061bbc2da" InformativeScreenshot="73dc6ff592f202cc94a9aa6e629583ff" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cphMain_ctlLogin_Password' tableRow='2' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:TypeInto.Target>
+                    </ui:TypeInto>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  cphMain_ctlLogin...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_148" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="28" OffsetY="14" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="9dcc5440-d624-461d-8339-cebdf0a89c54" InformativeScreenshot="be4cdab49abee78924057467f3b06d14" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;table' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cphMain_ctlLogin_LoginButton' tableRow='4' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /DashboardWebClient/...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_149" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fa6c44a0-3248-4955-b7b6-7300669f6f4d" InformativeScreenshot="a777f95d0860f7035a3a232d64bc4f85" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl aaname='Reports' parentid='navigation' tag='SPAN' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  cphMain_dataMerchant...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_150" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="0" OffsetY="0" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d54be97c-72b2-462f-b2b4-298528d971de" InformativeScreenshot="393960d98fd576804bce703376fd001e" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl id='cphMain_dataMerchant' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cphMain_dataMerchant_lnkReport_1' tableRow='2' tag='A' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  cphMain_dynamic...'" sap:VirtualizedContainerService.HintSize="359,135" sap2010:WorkflowViewState.IdRef="SelectItem_6" Item="342-ConnectOne Bank Merchants">
+                      <ui:SelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="4">
+                          <x:String>All Merchant Groups</x:String>
+                          <x:String>342-ConnectOne Bank Merchants</x:String>
+                        </scg:List>
+                      </ui:SelectItem.Items>
+                      <ui:SelectItem.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fe8155ab-f10e-4d25-88a7-30f09ce06282" InformativeScreenshot="20035161a5ab7440525debf25ee88725" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl id='cphMain_dynamicParameters_ct_MerchantGroupId' tableRow='28' tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:SelectItem.Target>
+                    </ui:SelectItem>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  cphMain_btnViewR...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_151" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="28" OffsetY="16" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="b169f16a-3eea-4121-9253-15b00165f23b" InformativeScreenshot="5fd2789b904de62c54c3f8b9bf033c62" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl parentid='tbReportsCommand' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cphMain_btnViewReport' tableRow='1' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'IMG  ctl00_cphMain_dbRe...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_152" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="6" OffsetY="8" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0980616a-e8fb-49ae-85fb-27af191a1e2e" InformativeScreenshot="6c17d41ebba5f6bbfc149b05f636a581" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl aaname='Export drop down menu' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='IMG' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_153" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="35" OffsetY="11" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5e9ee47c-7da5-4630-a8df-f9753c770f2a" InformativeScreenshot="18a2c6a9a6d0e6574294eb115062da1f" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='4' tableRow='3' tag='TABLE' /&gt;&lt;webctrl aaname='CSV (comma delimited)' tableRow='1' tag='A' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /DashboardWebClient/...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_154" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="42" OffsetY="17" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="48c7c419-d5f5-48c4-9f94-07281b20bdb4" InformativeScreenshot="5e26300a64e4bfd84fd8e390c4d564c7" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl parentid='secondary' tag='A' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  cphMain_dataMerchant...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_155" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="103" OffsetY="11" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="643f5709-18e6-45e1-9065-c6d7001a6faa" InformativeScreenshot="8dbcdb744a7b6ae1bc85a3fc358c9231" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl id='cphMain_dataMerchant' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cphMain_dataMerchant_lnkReport_3' tableRow='4' tag='A' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item 'SELECT  cphMain_dynamic...'" sap:VirtualizedContainerService.HintSize="359,135" sap2010:WorkflowViewState.IdRef="SelectItem_7" Item="342-ConnectOne Bank Merchants">
+                      <ui:SelectItem.Items>
+                        <scg:List x:TypeArguments="x:String" Capacity="4">
+                          <x:String>All Merchant Groups</x:String>
+                          <x:String>342-ConnectOne Bank Merchants</x:String>
+                        </scg:List>
+                      </ui:SelectItem.Items>
+                      <ui:SelectItem.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0b006205-f455-4ce6-b652-512d78903564" InformativeScreenshot="51c84c6e4dac17d7499edf107cac1a6f" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl id='cphMain_dynamicParameters_ct_MerchantGroupId' tableRow='28' tag='SELECT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:SelectItem.Target>
+                    </ui:SelectItem>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  cphMain_btnViewR...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_156" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="44" OffsetY="9" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a6d69001-aba0-4a1a-a268-cff3eb43a3e2" InformativeScreenshot="8ae847af22c415920d5e06c33158bb3f" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl parentid='tbReportsCommand' tableRow='1' tag='TABLE' /&gt;&lt;webctrl id='cphMain_btnViewReport' tableRow='1' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  ctl00_cphMain_dbRepo...'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_157" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="16" OffsetY="9" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="39da33e0-78ea-4068-bb4e-b175da01bb52" InformativeScreenshot="a71b2dad857ea0edb87e4fb365c2f62b" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl aaname='Export drop down menu' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  javascript:void(0)'" sap:VirtualizedContainerService.HintSize="359,107" sap2010:WorkflowViewState.IdRef="Click_158" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                      <ui:Click.CursorPosition>
+                        <ui:CursorPosition OffsetX="31" OffsetY="12" Position="TopLeft" />
+                      </ui:Click.CursorPosition>
+                      <ui:Click.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="daec7d64-b0b8-4d06-a435-fdf705d9c854" InformativeScreenshot="ffe4ff1a175bca5b6a2554224c6e764d" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;div&amp;gt;table&amp;gt;tbody&amp;gt;tr&amp;gt;td&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='4' tableRow='3' tag='TABLE' /&gt;&lt;webctrl aaname='CSV (comma delimited)' tableRow='1' tag='A' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                        </ui:Target>
+                      </ui:Click.Target>
+                    </ui:Click>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" IconBase64="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" InformativeScreenshot="7c3592ff2feb186e399d456e8802df37.png" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Direct Dashboard - Personal - Microsoft​ Edge' /&gt;" Title="Direct Dashboard - Personal - Microsoft​ Edge" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="513764cbdac4ab9ab0e032ad1c37345b.jpg" Selector="&lt;html app='msedge.exe' title='Direct Dashboard' /&gt;" Title="Direct Dashboard - Personal - Microsoft​ Edge" Url="https://dashboard.fisglobal.com/DashboardWebClient/Login.aspx?ReturnUrl=%2fDashboardWebClient%2fReports%2fReports.aspx%3fReportId%3d3&amp;ReportId=3" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: MerchantAccountSummary - Excel" sap:VirtualizedContainerService.HintSize="551,1548" sap2010:WorkflowViewState.IdRef="NApplicationCard_18" ScopeGuid="0ee7e5c3-9c4f-47aa-966c-9736f3e3c372" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1257" sap2010:WorkflowViewState.IdRef="Sequence_29">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'File Tab'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_74" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ee7e5c3-9c4f-47aa-966c-9736f3e3c372" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 42, 54, 30" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'File Tab'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia automationid='FileTabButton' cls='NetUIRibbonTab' name='File Tab' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia automationid='FileTabButton' cls='NetUIRibbonTab' name='File Tab' role='Button' check:fulltext='File Tab' /&gt;" Guid="3a54a3d1-6aa4-4c2c-88f5-84e5ebd42418" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAAiCAYAAAAOPsreAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADpSURBVFhH7dTRCcIwFIVhZ3EXKW4g4gqKD74rblBxmOIQ6irVAaKnnEgoLb7cEDnewg/pJX34aNpJvML7mu4q2cj8M+jz0cpGpkNlItOhMpHpUJnIdKhMZDrUpPvtGubVLFyaprvHGrP+vpyRaQcFIu18qgf3SEC/IaSh6by/Z7tZdzMUj7d1ZJaDHg/7LqwxWy0Xn2csIzPfNzr0AxpbI7zd9N4qMsu8UYR1vxzHl8xyR3dsv3VkloPiqMZvNGdkloMi/IAwQ4DHuWVk2kF/NTIdKhOZDpWJTIfKRKZDZSLToTKRqQ5twwvYFDfyb4nzeQAAAABJRU5ErkJggg==" InformativeScreenshot="bd5dd379517e4f9c3b0d2e7b0a8433cb.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='MerchantAccountSummary - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheck Action="Check" DisplayName="Check/Uncheck 'Pin this'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NCheck_3" ScopeIdentifier="0ee7e5c3-9c4f-47aa-966c-9736f3e3c372" Version="V3">
+              <uix:NCheck.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="188, 535, 1660, 56" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'Pin this'" FullSelectorArgument="&lt;uia automationid='msotcidPlaceHome' cls='NetUIElement' name='Home' /&gt;&lt;uia automationid='GroupRecentDocuments' cls='NetUISlabContainer' name='Open' /&gt;&lt;uia cls='NetUIListView' name='Recent' /&gt;&lt;uia cls='NetUIListViewItem' name='MerchantAccountSummary' /&gt;" FuzzySelectorArgument="&lt;uia automationid='msotcidPlaceHome' cls='NetUIElement' name='Home' /&gt;&lt;uia automationid='GroupRecentDocuments' cls='NetUISlabContainer' name='Open' /&gt;&lt;uia cls='NetUIListView' name='Recent' /&gt;&lt;uia cls='NetUIListViewItem' name='MerchantAccountSummary' role='List Item' automationid='' check:fulltext='Pin this item to the list' /&gt;" Guid="56061af7-fe2a-4024-9277-41744f1acf0c" ImageBase64="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" InformativeScreenshot="df895a16a7baa6da03a14cef6abb0f49.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='MerchantAccountSummary - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NCheck.Target>
+            </uix:NCheck>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Save As'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_75" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ee7e5c3-9c4f-47aa-966c-9736f3e3c372" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="8, 306, 140, 40" DesignTimeScaleFactor="1" ElementType="ListItem" FriendlyName="'Save As'" FullSelectorArgument="&lt;uia automationid='NavBarMenu' cls='NetUIKeyboardTabElement' name='File' /&gt;&lt;uia cls='NetUIRibbonTab' name='Save As' /&gt;" FuzzySelectorArgument="&lt;uia automationid='NavBarMenu' cls='NetUIKeyboardTabElement' name='File' /&gt;&lt;uia cls='NetUIRibbonTab' name='Save As' role='List Item' automationid='' check:fulltext='Save As' /&gt;" Guid="531b59d2-401c-493d-a335-728abcf49d65" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAAsCAYAAACKTjG2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIqSURBVHhe7ZZBahRBAEU9i5fxCDmIuYB3CNl7AnGdrbjMSrJNFu4EwYXrMX/8D8pOjfghBqrnP3hMT3X1NEM9qvsVHB55ffmm1n8SnE8DqpngfBpQzQTn04BqJjifBlQzwfk0oJoJzqcB1UxwPg2oZoLzaUA1E5xPA6qZ4HwaUM0E59OAaiY4nwZUM8H5NKCaCc6nAdVMcD4NqGaC82lANROcTwOqmeB81gzo/aePxz8BsznP7f23r0dn585JcD7rBXRx9fb4B/TJ93cfrp/Me051j+8/fxzlvucqOJ/1AlIsWsjZuf/lzZfPfzibcy6C81nzESZuH+6ejOsRA5xXbHrkMWcMkN1M/C1Kdp5ZvOM9x/vsVXA+675EayHFqceX0KJrUcd3F4XFQhOGjjU2i3IbjY6556lr9iw4n3UDklpIMS7oCOOCUIiBa0dmL8kKZHxs6Zho2MHO6bEGzmftgCQLymIyPu4UmiMVGIutc+POcspTjHP0m4L77VlwPusFpAjGhdKuoQXUGDuIjgXzFJdikexEUuj3+L5V52a7ksa21xHpOLZHwfmsuQMpBBgXmHGN6Xgb2vZ9hdBge34WiiQsfY5s5+1RcD7rP8LqywrOpwHVTHA+DahmgvNpQDUTnE8DqpngfBpQzQTn04BqJjifBlQzwfk0oJoJzqcB1UxwPg2oZoLzaUA1E5xPA6qZ4HwaUM0E59OAaiY4nwZUM8H5NKCa+ZvD4RePwGvNsO2evAAAAABJRU5ErkJggg==" InformativeScreenshot="5fc0c3f7d0cd93450bc3172e414e35f3.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='MerchantAccountSummary - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_76" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ee7e5c3-9c4f-47aa-966c-9736f3e3c372" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1228, 169, 82, 28" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Save'" FullSelectorArgument="&lt;uia cls='NetUIElement' name='Save As' /&gt;&lt;uia automationid='GroupDynamicServiceProvider' cls='NetUISlabContainer' name='Pick a Folder' /&gt;&lt;uia cls='NetUIButton' name='Save' /&gt;" FuzzySelectorArgument="&lt;uia cls='NetUIElement' name='Save As' /&gt;&lt;uia automationid='GroupDynamicServiceProvider' cls='NetUISlabContainer' name='Pick a Folder' /&gt;&lt;uia cls='NetUIButton' name='Save' role='Button' automationid='' check:fulltext='Save' /&gt;" Guid="1d18df0d-0bfe-4dec-ba41-be672dd41862" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAAgCAYAAACILY8rAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIQSURBVGhD7ZY/S8NAGIf9Jk5SdXaRbkXbD6Fd3d06+A0EjbYIfgFbBdHFyangYq0WiiBGQXQTwcFs/cPJ78hbrzGpkuSNaX0f+JG7yyXDc+9dMuU4jpLEHxHLlIHYSqUiiSG+YoVoiFgmRCwTIpYJEcsEm9hsdjF0JgFWsZ1OR8ds+8U7dxIQsUyIWCZSJbbb7apyedd9QzC1Wk1lMplB0kgqxBYKy6rf77tPjsa2bS0TV+rX63XdThOJiQ0KpDYal/qZtZNHNb15rdbPnnTfD0jM5XJuL70kInZUqFJXjx7UnNVSx7dvWu4oULGlUsntfVEsFgfHA93HIuDoIMyFoepH4l6sPxVrSs3ut9XKoa1mt290/ycgAkKCjgHcgzhIhXACwkk03kFHCsb8FissiYmlrY+Y25+k3r86WuxvpBKQasr1ftRonCQDqkx61oy5AFFJVCy1vZUaRiphWZauNNrWBASSWMxBIB5XgHtxb3+TxMVGlQo5JAygyiALY1RxVI00D9Ih0dz6AHPoWIgbNrH5/JKqVg+GxOI/FUAiPlRhKxWC/LYvjWMMbe8CeM9QWgDKWJyxzebVkFyI7fV66uL5Q83vtNTCXltXbJjtPw6wiQUkF1LxwQIb5y9qZqul5U6qVMAq1g/IhNzTu3d3ZDJJXOx/QcQyIWKZELFMiFgmAsVKouebWEm8EbEscdQnWuMiNmNX3NAAAAAASUVORK5CYII=" InformativeScreenshot="2d37516a179eac1f47816082c0ca45b9.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='MerchantAccountSummary - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_77" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ee7e5c3-9c4f-47aa-966c-9736f3e3c372" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="197, 119, 75, 23" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd ctrlid='1' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='OK' check:text='OK' /&gt;" Guid="683437b6-8f12-4af0-9d82-ee74e19cff31" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAbCAYAAAA9K9JnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADuSURBVGhD7dbdDYQgEEbRpSe6oRlKoQGLoBQ7oINZJ0QcXV2jk+CYfA83/uDTySh+SimE7gU8RcBTtMIbhgGdJL1+8MZxRAcBTxHwFAFPEfAUAU+RXbwUyDnX8jGL9UTBeYq5XqcwPROSWO+TSbwc/QQWKLV7maKXQAKPkR+A4wziMdQyVa0cyTfQGY+PErlv9vBWSLI6fSHxecXze8gdexnejMV4e9/CvtnD22wGrcPX9rnpM4h3vGEsUybQeMPwkXJ7tl8m8bgKeOFX5QFAs3hvCHiKgKcIeIqAp+gUD/1Peq3w0LWApwh4tyv0BcRq2fxwiGtYAAAAAElFTkSuQmCC" InformativeScreenshot="6822663f02469dd884bf195bf3025067.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_78" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ee7e5c3-9c4f-47aa-966c-9736f3e3c372" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1882, 8, 46, 34" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIAppFrameHelper' name='Close' /&gt;" FuzzySelectorArgument="&lt;uia cls='MsoCommandBar' helpText='Ribbon toolbar' /&gt;&lt;uia cls='NetUIAppFrameHelper' name='Close' role='Button' automationid='' check:fulltext='Close' /&gt;" Guid="21f8a8c0-b86b-43f4-b97e-ccc934a22518" ImageBase64="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" InformativeScreenshot="3bb87c01ee4f251fc98600390d2ea696.png" ScopeSelectorArgument="&lt;wnd app='excel.exe' cls='XLMAIN' title='MerchantAccountSummary - Excel' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" Arguments="\\cnobec.njcbank.local\njcb\deposit operations\reconciliations\automations\sendpoint reports\merchantaccountsummary.csv" FilePath="C:\Program Files\Microsoft Office\root\Office16\excel.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGvSURBVFhH7Zc9SEJRGIZdo9B+pRoShwhChIoQhCBbgsgpGgJpKyKIaAmClqDBoSmyLQikrbaCppaksdvUGDQ1FjQ0fvlezpGjfefcn86FkF548Hr4vvO+nh/U2L+8lK6uO3XIL1O1gyA4wkYvzsQEY2JE2OjFmZjgTEwIG704ExOciQlhoxdnYoIzMSFs9Bo5LpEXqcpq+ADd+wWnDoWhZ3eWBjYKbojfBGAn90vH/CjFt/ON9zKIX/5WgNRhke5fnlz2bk4a4zOVtcY4ntUe6ytw+nBJ0MfXpxsIYzCG8Npabz0ATGEOle/OafFsx32GskcrTbUgkjOweVV2DRFEfnqE4WojO4TSGHp9f2NrQGQBrp9rwp7fe0l8OkXJpQkaLOVcuBoTbAC579gCeR6wLVyt9QA4hFhyCPsOIPVWqFgPwF1DGeji8bapFlgNoF45dcnlrYBQo/ZEcgaC0BYBQn8dJ7byPwIERfzs0KtzfIh0dGWGKZFLRxugd26MvEguT7KT+0HY6NW3kCET/cUsO7FfhI1eXJNNhI1eXJNNhI1e9SKntcki3n/N2lyx2De7iUsgzKBEqQAAAABJRU5ErkJggg==" InformativeScreenshot="5c4b2c7550de700349166e9f38f14b28.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='MerchantAccountSummary - Excel' /&gt;" Title="MerchantAccountSummary - Excel" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Direct Dashboard - Personal - Microsoft​ Edge" sap:VirtualizedContainerService.HintSize="551,563" sap2010:WorkflowViewState.IdRef="NApplicationCard_22" ScopeGuid="c9df707c-5f3c-4892-87db-5ca8563bdb03" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_33">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'pane'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_95" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c9df707c-5f3c-4892-87db-5ca8563bdb03" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="327, 8, 1463, 33" DesignTimeScaleFactor="1" FriendlyName="'pane'" FullSelectorArgument="&lt;ctrl name='Direct Dashboard - Microsoft Edge' role='pane' /&gt;&lt;ctrl idx='2' name='Tab bar' role='page tab list' /&gt;&lt;ctrl idx='3' role='pane' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Direct Dashboard - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Tab bar' role='page tab list' /&gt;&lt;ctrl automationid='' role='pane' /&gt;" Guid="951c38ff-2c11-4793-baea-19a9a5beec7f" ImageBase64="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" InformativeScreenshot="90ae43a0d1b7d82b99141c59e03697f7.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Direct Dashboard - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" IconBase64="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" InformativeScreenshot="2e4fa0a52a82feed30ce1bc658db7d89.png" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Direct Dashboard - Personal - Microsoft​ Edge' /&gt;" Title="Direct Dashboard - Personal - Microsoft​ Edge" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
